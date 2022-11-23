@@ -12,7 +12,7 @@ Car.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    make: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -20,20 +20,18 @@ Car.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    user_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        Model: "user",
-        key: "id",
-      },
+    // no of people the car can fit
+    no_space: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "Car",
+    modelName: "car",
   }
 );
 
-module.exports = Post;
+module.exports = Car;

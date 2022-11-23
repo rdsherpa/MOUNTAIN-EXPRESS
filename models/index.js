@@ -1,26 +1,25 @@
 // importing all models
 const Car = require("./Car");
 const User = require("./User");
-const Trips = require("./Trips");
-const Passanger = require("./Passanger");
+const Trip = require("./Trip");
 
 // creating associations
-User.hasMany(Trips, {
+User.hasMany(Trip, {
   foreignKey: "user_id",
 });
 
-Trips.beongs(User, {
+Trip.belongsTo(User, {
   foreignKey: "user_id",
   onDelete: "SET NULL",
 });
 
-Car.belongs(Passanger, {
-  foreignKey: "passanger_id",
-  onDelete: "SET NUll",
+Car.hasMany(Trip, {
+  foreignKey: "car_id",
 });
-Passanger.hasMany(Trips, {
-  foreignKey: "passanger_id",
+
+Trip.belongsTo(Car, {
+  foreignKey: "car_id",
   onDelete: "SET NULL",
 });
 
-module.exports = { Car, User, Trips, Passanger };
+module.exports = { Car, User, Trip };

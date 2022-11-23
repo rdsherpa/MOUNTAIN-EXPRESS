@@ -35,8 +35,13 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8],
+        len: [8], //length of password
       },
+    },
+    //user information: address, phone number
+    user_info: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
