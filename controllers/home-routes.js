@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const sequelize = require("../../config/connection");
-const { Car, User, Trip } = require("../../models");
+const sequelize = require("../config/connection");
+const { Car, User, Trip } = require("../models");
 
 //get all trip information
 router.get("/", (req, res) => {
@@ -25,7 +25,7 @@ router.get("/", (req, res) => {
         loggedIn: req.session.loggedIn,
       });
     })
-    .catch((error) => {
+    .catch((err) => {
       console.log(err);
       res.status(500).json(err);
     });

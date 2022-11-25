@@ -39,7 +39,11 @@ User.init(
       },
     },
     //user information: address, phone number
-    user_info: {
+    address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    contact_info: {
       type: DataTypes.STRING,
       allowNull: false,
     },
