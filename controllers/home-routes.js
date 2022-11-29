@@ -3,25 +3,51 @@ const sequelize = require("../config/connection");
 const { Car, User, Trip } = require("../models");
 
 //get all trip information
+// router.get("/", (req, res) => {
+//   Trip.findAll({
+//     attributes: ["id", "nb_passangers", "user_id", "car_id"],
+//     include: [
+//       {
+//         model: User,
+//         attributes: ["id", "name", "email", "password"],
+//       },
+//       {
+//         model: Car,
+//         attributes: ["id", "make", "description"],
+//       },
+//     ],
+//   })
+//     .then((dbUserData) => {
+//       const user = dbUserData.map((user) => user.get({ plain: true }));
+//       console.log(user);
+//       res.render("homepage", {
+//         user,
+//         loggedIn: req.session.loggedIn,
+//       });
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(500).json(err);
+//     });
+// });
 router.get("/", (req, res) => {
   Trip.findAll({
-    attributes: ["id", "nb_passangers", "user_id", "car_id"],
     include: [
       {
         model: User,
-        attributes: ["id", "name", "email", "password"],
+        attributes: { exclude: ["password"] },
       },
       {
         model: Car,
-        attributes: ["id", "make", "description"],
       },
     ],
+    raw: true,
+    nest: true,
   })
-    .then((dbUserData) => {
-      const user = dbUserData.map((user) => user.get({ plain: true }));
-      console.log(user);
+    .then((dbTripsData) => {
+      console.log(dbTripsData);
       res.render("homepage", {
-        user,
+        trips: dbTripsData,
         loggedIn: req.session.loggedIn,
       });
     })
@@ -37,7 +63,7 @@ router.get("/trip/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: [["id", "nb_passangers", "user_id", "car_id"]],
+    attributes: [["id", "nb_passengers", "user_id", "car_id"]],
     include: [
       {
         model: User,

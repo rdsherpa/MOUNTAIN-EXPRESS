@@ -2,10 +2,9 @@ const { Trip } = require("../models");
 
 const tripdata = [
   {
-    id: "passanger id",
-    nb_passangers: "6",
-    user_id: "92817A",
-    car_id: "72726B",
+    nb_passengers: 6,
+    user_id: 1,
+    car_id: 1,
   },
 ];
 

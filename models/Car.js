@@ -22,7 +22,7 @@ Car.init(
     },
     // no of people the car can fit
     no_space: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
   },

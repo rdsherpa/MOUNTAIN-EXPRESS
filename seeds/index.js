@@ -1,4 +1,4 @@
-const seedUsers = require("./user-seeds");
+const seedUsers = require("./User-seeds");
 const seedCars = require("./Car-seeds");
 const seedTrips = require("./Trip-seeds");
 

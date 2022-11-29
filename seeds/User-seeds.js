@@ -3,19 +3,25 @@ const { User } = require("../models");
 
 const userdata = [
   {
-    username: "rdsherpa",
+    name: "Riwa Sherpa",
     email: "sherpariwa@gmail.com",
     password: "password123",
+    address: "Los Angeles",
+    contact_info: "91827373664",
   },
   {
-    username: "AnnieS",
+    name: "Annie S",
     email: "Annie@gamil.com",
     password: "password1234",
+    address: "Los Angeles",
+    contact_info: "91327373664",
   },
   {
-    username: "Julian",
+    name: "Julian B",
     email: "Julain@gamil.com",
     password: "password1235",
+    address: "Los Angeles",
+    contact_info: "91227373664",
   },
 ];
 

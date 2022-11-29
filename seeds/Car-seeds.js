@@ -4,7 +4,7 @@ const cardata = [
   {
     make: "subarban",
     description: "large vehicle",
-    no_space: "6",
+    no_space: 6,
   },
 ];
 
