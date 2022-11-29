@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
         attributes: ["id", "name", "email", "password"],
       },
       {
-        mode: Car,
+        model: Car,
         attributes: ["id", "make", "description"],
       },
     ],
@@ -44,7 +44,7 @@ router.get("/trip/:id", (req, res) => {
         attributes: ["id", "name", "email", "password"],
       },
       {
-        mode: Car,
+        model: Car,
         attributes: ["id", "make", "description"],
       },
     ],
