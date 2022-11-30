@@ -45,10 +45,10 @@ router.get("/", (req, res) => {
     nest: true,
   })
     .then((dbTripsData) => {
-      console.log(dbTripsData);
+      // console.log(dbTripsData);
       res.render("homepage", {
         trips: dbTripsData,
-        loggedIn: req.session.loggedIn,
+        logged_in: req.session.logged_in,
       });
     })
     .catch((err) => {
@@ -88,6 +88,16 @@ router.get("/trip/:id", (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
+});
+
+router.get("/login", (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+
+  res.render("login");
 });
 
 module.exports = router;
