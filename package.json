@@ -8,8 +8,8 @@
     "start": "node server.js",
     "seed": "node seeds/index.js",
     "watch": "nodemon server.js",
-    "tailwind": " npx tailwindcss-cli build -i public/stylesheets/main.css -o public/stylesheets/style.css -w  "
-  },
+    "watch-tailwind": "npx tailwindcss -i public/stylesheets/main.css -o public/stylesheets/style.css -w"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",

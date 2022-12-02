@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="flex justify-between h-10 items-center bg-blue-200 lg:h-20">
+        <div>
+          <!-- <img
+            src="./assets/images/Mountain-Express.jpg"
+            style="width: 20%; height: 100%; opacity: 0.6"
+            alt=""
+          /> -->
+          <h1 class="text-yellow-700 lg:text-xl pl-4">Mountain Express</h1>
+        </div>
+
+        <div class="pr-4">
+          <button class="text-yellow-700 lg:text-lg hover:text-white">
+            Login
+          </button>
+          <button class="text-yellow-700 lg:text-lg lg:pl-4 hover:text-white">
+            Signup
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="flex items-center flex-col">
+      <h2 class="text-4xl self-start">Book your transportation:</h2>
+      <form class="border-zinc-900 border-4 w-2/4 mt-4 bg-stone-600" id = "booking">
+        <div class="flex justify-around">
+          <div class="flex justify-center gap-2">
+            <input type="radio" name="trip" id="trip" value="one-way" />
+            <p>One Way</p>
+          </div>
+
+          <div class="flex justify-center gap-2">
+            <input type="radio" name="trip" id="trip" value="round-trip" />
+            <p>Round trip</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 p-4 gap-2">
+          <input
+            type="text"
+            placeholder="From" 
+            class="border-zinc-900 border-2 p-4"
+            id = "from"
+          />
+          <input
+            type="text"
+            placeholder="To"
+            class="border-zinc-900 border-2"
+            id = "to"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 p-4 gap-2">
+          <input 
+            type="date" 
+            class="border-zinc-900 border-2 p-4"
+            id = "userDate"
+          />
+          <input 
+            type="datetime" 
+            class="border-zinc-900 border-2 p-4"
+            id ="userDateTime" 
+          />
+        </div>
+
+        <div class="grid grid-cols-1 p-4">
+          <input
+            type="number"
+            placeholder="No. of passengers"
+            class="border-zinc-900 border-2 p-4"
+            id = "passengers"
+          />
+        </div>
+        <div class = "grid grid-cols-2 p-4 justify-items-end">
+          <div></div>
+          <button
+          type="submit"
+          class="border-zinc-900 border-2 p-4 w-[200px] bg-[rgb(223,239,253)] hover:text-white">
+          Continue
+          </button>
+        </div>
+      </form>
+    </section>
+    <script src="./public/javascript/booking.js"></script>
+  </body>
+</html>
