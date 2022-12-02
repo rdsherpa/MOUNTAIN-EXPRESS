@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../public/stylesheets/style.css">
+    {{!-- changed href of style sheets --}}
+    <link rel="stylesheet" href="/stylesheets/style.css"> 
     <title>Mountain Express</title>
 </head>
+
 <body>
-    <header>
-        <div class = "banner"> 
-        <h1> Mountain Express </h1>
-        <p> Colorado's premier transportation service </p>
-        </div> 
-    </header>
-    <br>
-    <section>
-        <p> "Simple, affordable, memorable"
-        </p>
-        <h4> Book now with one of our experienced drivers: </h4>
-        <button> One-way </button>
-        <button> Round-trip </button>
+  <header class="display-flex justify-space-between align-center p-2">
+    <h1>
+      Mountain Express
+    </h1>
+    {{!-- if you are able to log in then you are given a chance to logout as well --}}
+    {{#if logged_in}}
+    <nav>
+      <button class="btn" id="logout">logout</button>
+    </nav>
+    {{/if}} 
 
-    </section>
-    <aside>
+  </header>
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+  <footer>
+      
+  </footer>
 
-    </aside>    
-
-    
+  {{#if logged_in}}
+  <script src="javascript/logout.js"></script>
+  {{/if}}
+{{!-- <script src="/javascript/main.js"></script> --}}
 </body>
 </html>
