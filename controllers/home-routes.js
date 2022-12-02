@@ -90,6 +90,10 @@ router.get("/trip/:id", (req, res) => {
     });
 });
 
+router.get('/one-way', (req, res) => {
+  res.render('one-way')
+})
+
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
@@ -101,3 +105,4 @@ router.get("/login", (req, res) => {
 });
 
 module.exports = router;
+
