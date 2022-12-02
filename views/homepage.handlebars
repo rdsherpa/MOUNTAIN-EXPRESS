@@ -1,59 +1,88 @@
-    {{!-- we can show information about the company and it's service, then is given option to log in or sign up instead  --}}
-    <body>
-    <ul class="topnav">
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">Pricing</a></li>
-      <li><a href="#contact">Reservation</a></li>
-      <li class="right"><a href="#about">Logout</a></li>
-    </ul>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountain Express</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between h-10 items-center bg-blue-200 lg:h-20">
+        <div>
+          <!-- <img
+            src="./assets/images/Mountain-Express.jpg"
+            style="width: 20%; height: 100%; opacity: 0.6"
+            alt=""
+          /> -->
+          <h1 class="text-yellow-700 lg:text-xl pl-4">Mountain Express</h1>
+        </div>
 
-    <section>
-        <p> "Simple, affordable, memorable"
-        </p>
-        <h4> Book now with one of our experienced drivers: </h4>
-        <a href="/one-way">
-             <button id="oneWayBtn"> One-way </button>
-        </a>
-        <button id="roundTripBtn"> Round-trip </button>
-
-        
-
-    {{!-- <div>
-        <h4>From</h4>
-{{!-- input airport name, hotels, address --}}
-
-        <h4>To</h4>
-{{!-- input destination which might include hotels, airports, hotels, address --}}
-
-        <h4> Date</h4>
-{{!-- input date and make user able to see calander drop down and see it --}}
-
-        <h4>Time</h4>
-{{!-- user should be able to choose time --}}
-
-        <h4>No. of Passangers</h4>
-        {{!-- user can choose no.of passangers, in which choice of adults and children is given --}}
-    </div>
-{{!-- upon click continue user is given option enter info about airline name and the total price and options to add tip to the driver and helpful notes to the driver --}}
-
-{{!-- then user is given option to go back or either continue  --}}
-
-<div>
-
-{{!-- user is then taken to new page where user can see the detail info that he/she entered which includes "From and To destination"--}}
-    
-</div>
-
-<div>
-    {{!-- user is then given option to check out and upon clicking "checkout" --}}
-
-    {{!-- user is asked first and last name, email, contact info --}}
-
-    {{!-- then user is given options to book a trip --}}
-</div> --}}
-
+        <div class="pr-4">
+          <button class="text-yellow-700 lg:text-lg hover:text-white">
+            Login
+          </button>
+          <button class="text-yellow-700 lg:text-lg lg:pl-4 hover:text-white">
+            Signup
+          </button>
+        </div>
+      </nav>
+      <section
+        style="background-image: url(./assets/images/pexels-sean-m-4279629.jpg)"
+        class="bg-center bg-cover lg:bg-cover object-contain h-60 flex flex-col items-center justify-around"
+      >
+        <div>
+          <h2 class="text-center text-2xl md:text-4xl text-white font-bold">
+            MOUNTAIN EXPRESS
+          </h2>
+          <p class="text-center text-lg text-white font-bold">
+            "Simple, affordable, memorable"
+          </p>
+        </div>
+        <div>
+          <p class="text-center text-lg text-white font-bold">
+            Book your transportation online below
+          </p>
+          <p class="text-center text-lg text-white font-bold">
+            (list of locations available for transportation)
+          </p>
+        </div>
+      </section>
+    </header>
+    <section class="lg:grid lg:grid-cols-2 lg:gap-1">
+      <div
+        class="h-40 bg-blue-200 mb-1 flex items-center justify-center flex-col"
+      >
+        <p>Book now with one of our experienced drivers:</p>
+        <button class="hover:text-white">
+          <a href="/booking">Book Now</a>
+          </button>
+      </div>
+      <div class="h-40 bg-blue-200 flex items-center justify-center flex-col">
+        <p>Or contact us directly at:</p>
+        <p>+000 - 000 - 000</p>
+      </div>
     </section>
-    <aside>
-    <button id="logout">Logout</button>
-    </aside> 
+    <section class="flex items-start justify-center h-40 pt-3">
+      <h5>Testimonials</h5>
+    </section>
+    <section class="flex items-center justify-center h-40 pt-3 flex-col">
+      <h5>Our Promise</h5>
+      <p>(more info about company and services provided)</p>
+    </section>
+    <section class="flex items-center justify-center h-40 pt-3 flex-col">
+      <h5>Check out our fleet:</h5>
+      <p>detail of cars available</p>
+    </section>
+    <section class="flex items-center justify-center h-40 pt-3 flex-col">
+      <h5>Footer</h5>
+      <ul class="flex gap-3">
+        <li>Home</li>
+        <li><a href="./booking.handlebars">Book</a></li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </section>
+  </body>
+</html>
