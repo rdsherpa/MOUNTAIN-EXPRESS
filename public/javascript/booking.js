@@ -30,4 +30,3 @@ bookingForm.addEventListener("submit", (e) => {
       .catch((err) => console.log(err));
   });
 
-  console.log("hello");
