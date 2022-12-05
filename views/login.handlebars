@@ -1,53 +1,85 @@
-<div class="row">
-   <!-- Sign In -->
-  <div class="col-md-6">
-    <h2>Login</h2>
+<section class="flex items-center flex-col mb-12">
+  <h2 class="text-4xl self-start">Login</h2>
+  <form
+    class="border-zinc-900 border-4 md:w-2/4 w-[90%] mt-4 bg-zinc-100"
+    id="login-form"
+  >
 
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
+    <div class="flex justify-start flex-col p-4 gap-2 ">
+      <p>Email:</p>
+      <input
+        class="form-input border-zinc-900 border-2 p-4"
+        type="text"
+        id="email-login"
+      />
+    </div>
+    <div class="flex justify-start flex-col p-4 gap-2">
+      <p>Password:</p>
+      <input
+        class="form-input border-zinc-900 border-2 p-4"
+        type="password"
+        id="password-login"
+      />
+    </div>
+    <div class="flex items-center justify-center">
+      <button
+        type="submit"
+        class="border-zinc-900 border-2 p-4 m-4 md:m-0 w-[100%] m-2 md:w-[200px] bg-[rgb(223,239,253)] md:mb-4 hover:text-white"
+      >
+        Login
+      </button>
+    </div>
+  </form>
+</section>
 
-  <!-- Sign Up -->
-  <div class="col-md-6">
-    <h2>Signup</h2>
+<section class="flex items-center flex-col">
+  <h2 class="text-4xl self-start">Sign Up</h2>
 
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="email" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <label for="name-signup">address:</label>
-        <input class="form-input" type="text" id="address-signup" />
-      </div>
-      <div class="form-group">
-        <label for="name-signup">contact info:</label>
-        <input class="form-input" type="text" id="contact-info-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
+  <form
+    class="signup-form border-zinc-900 border-4 md:w-2/4 w-[90%] mt-4 bg-zinc-100"
+    id="signup-form"
+  >
+    <div class="flex justify-start flex-col gap-2 p-4 my-2">
+      <p>First Name:</p>
+      <input
+        class="form-input form-input border-zinc-900 border-2 p-4"
+        type="text"
+        id="first-name"
+      />
+    </div>
+    <div class="flex justify-start flex-col gap-2 p-4 my-2">
+      <p>Last Name:</p>
+      <input
+        class="form-input form-input border-zinc-900 border-2 p-4"
+        type="text"
+        id="last-name"
+      />
+    </div>
+    <div class="flex justify-start flex-col gap-2 p-4 my-2">
+      <p>Email:</p>
+      <input
+        class="form-input form-input border-zinc-900 border-2 p-4"
+        type="email"
+        id="email-signup"
+      />
+    </div>
+    <div class="flex justify-start flex-col gap-2 p-4 my-2">
+      <p>Password:</p>
+      <input
+        class="form-input form-input border-zinc-900 border-2 p-4"
+        type="password"
+        id="password-signup"
+      />
+    </div>
+
+    <div class="flex items-center justify-center mb-4">
+      <button
+        class="border-zinc-900 border-2 p-4 m-4 md:m-0 w-[100%] m-2 md:w-[200px] bg-[rgb(223,239,253)] hover:text-white"
+        type="submit"
+      >Sign Up</button>
+    </div>
+    <!--This button in the middle too-->
+  </form>
+</section>
 
 <script src="javascript/login.js"></script>

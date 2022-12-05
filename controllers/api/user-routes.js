@@ -48,6 +48,7 @@ router.get("/:id", (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
+    console.log(req.body)
     const userData = await User.create(req.body);
 
     req.session.save(() => {
@@ -57,6 +58,7 @@ router.post("/", async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
+    console.log(err)
     res.status(400).json(err);
   }
 });
@@ -104,5 +106,10 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
+
+// alreadystarted creation of the payment backend route
+router.post("/payment", (req, res)=> {
+  console.log(req.body)
+})
 
 module.exports = router;
