@@ -108,5 +108,9 @@ router.get("/booking", (req,res)=>{
   res.render("booking")
 })
 
+router.get("/payment", (req,res)=>{
+  res.render("payment")
+})
+
 module.exports = router;
 

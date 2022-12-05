@@ -107,4 +107,9 @@ router.post("/logout", (req, res) => {
   }
 });
 
+// alreadystarted creation of the payment backend route
+router.post("/payment", (req, res)=> {
+  console.log(req.body)
+})
+
 module.exports = router;

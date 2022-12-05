@@ -40,6 +40,7 @@ const signupFormHandler = async (event) => {
   // console.log(name, email, password, address, contact_info);
   console.log(firstName, lastName,email, password)
   if (firstName && lastName && email && password) {
+    console.log("here")
     const response = await fetch("/api/users", {
       method: "POST",
       body: JSON.stringify({ firstName, lastName,email, password }),
