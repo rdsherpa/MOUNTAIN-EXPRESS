@@ -1,6 +1,6 @@
-    <section class="flex items-center flex-col">
-      <h2 class="text-4xl self-start">Book your transportation:</h2>
-      <form class="border-zinc-900 border-4 md:w-2/4 w-[90%] mt-4 bg-zinc-100" id = "booking">
+    <section class="flex items-center flex-col mb-16">
+      <h2 class="font-bold text-sky-700 pl-4 text-4xl self-start">Book your transportation:</h2>
+      <form class="border-sky-800 rounded-md border-4 md:w-2/4 w-[90%] mt-4 mb-16 bg-zinc-100" id = "booking">
         <div class="flex justify-around">
           <div class="flex justify-center gap-2">
             <input type="radio" name="trip" id="trip" value="one-way" />
@@ -19,13 +19,13 @@
           <input
             type="text"
             placeholder="From" 
-            class="border-zinc-900 border-2 md:p-4 m-2  md:m-0"
+            class="border-sky-100 border-2 md:p-4 m-2  md:m-0"
             id = "from"
           />
           <input
             type="text"
             placeholder="To"
-            class="border-zinc-900 border-2 md:p-4 m-2 md:m-0"
+            class="border-sky-100 border-2 md:p-4 m-2 md:m-0"
             id = "to"
           />
         </div>
@@ -33,13 +33,13 @@
         <div class="grid grid-cols-2 p-2 md:p-4 gap-2">
           <input 
             type="datetime-local" 
-            class="border-zinc-900 border-2 p-0 md:p-4"
+            class="border-sky-100 border-2 p-0 md:p-4"
             id = "userDate"
           />
           <input 
             type="datetime-local"
 
-            class="border-zinc-900 border-2 p-0 md:p-4"
+            class="border-sky-100 border-2 p-0 md:p-4"
             id ="userDateTime" 
           />
         </div>
@@ -48,7 +48,7 @@
           <input
             type="number"
             placeholder="No. of passengers"
-            class="border-zinc-900 border-2 p-4"
+            class="border-sky-100 border-2 p-4"
             id = "passengers"
           />
         </div>
@@ -56,8 +56,8 @@
           <div></div>
           <button
             type="submit"
-            class="border-zinc-900 border-2 p-4 w-[200px] bg-[rgb(223,239,253)] hover:text-white">
-            Continue
+            class="text-white bg-amber-500 rounded-md border-2 p-4 w-[200px] hover:bg-amber-400">
+          <a href="/payment">Continue</a>
           </button>
         </div>
       </form>
