@@ -104,5 +104,9 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.get("/booking", (req,res)=>{
+  res.render("booking")
+})
+
 module.exports = router;
 
