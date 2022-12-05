@@ -88,13 +88,13 @@ app.post("/send", (req, res) => {
   });
 
   // send mail with defined transport object
-  let info = await transporter.sendMail({
-    from: '"Nodemailer Contact 👻" <test@mountainexpress.com>', // sender address
-    to: "sherpariwa@gmail.com", // list of receivers
-    subject: "Node Contact Request", // Subject line
-    text: "Hello world?", // plain text body
-    html: output, // html body
-  });
+  // let info = await transporter.sendMail({
+  //   from: '"Nodemailer Contact 👻" <test@mountainexpress.com>', // sender address
+  //   to: "sherpariwa@gmail.com", // list of receivers
+  //   subject: "Node Contact Request", // Subject line
+  //   text: "Hello world?", // plain text body
+  //   html: output, // html body
+  // });
 
   console.log("Message sent: %s", info.messageId);
   // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
