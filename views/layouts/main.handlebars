@@ -25,12 +25,16 @@
           {{#if logged_in}}
             <button class="btn" id="logout">logout</button>
           {{else}}
+          <a href="/login">
             <button class="text-yellow-700 lg:text-lg hover:text-white">
             Login
             </button>
+            </a>
+            <a href="/login">
             <button class="text-yellow-700 lg:text-lg lg:pl-4 hover:text-white">
             Signup
             </button>
+            </a>
           {{/if}}
         </div>
       </nav>
