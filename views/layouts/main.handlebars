@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountain Express</title>
     <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
 <body>
   <header>
-    <nav class="flex justify-between h-10 items-center bg-blue-200 lg:h-20">
+    <nav class="flex justify-between items-center h-10 items-center bg-sky-800 lg:h-20">
         <div class="pl-2">
           <a href="/">
             <img
@@ -25,7 +26,7 @@
           {{#if logged_in}}
             <button class="btn" id="logout">logout</button>
           {{else}}
-            <button class="text-yellow-700 lg:text-lg hover:text-white">
+            <button class="text-white bg-amber-500 p-1 lg:p-2 rounded-md px-4 lg:rounded-2xl mt-2 hover:bg-amber-200 text-[0.6rem] lg:text-lg hover:text-white mb-2 w-[100px] md:w-[200px]">
             <a href="/login">Login/Sign-up</a>           
             </button>
           {{/if}}

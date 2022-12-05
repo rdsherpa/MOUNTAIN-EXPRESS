@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./views/homepage.handlebars", "./views/layouts/main.handlebars", "./views/booking.handlebars", "./views/login.handlebars", "*.{html,handlebars,js}"],
   theme: {
+    fontFamily:{
+      merri: ['Merriweather', "serif"]
+    },
     extend: {
       backgroundImage: {
         "hero-pattern":
