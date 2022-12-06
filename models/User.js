@@ -19,18 +19,30 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // firstName:{
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
-    // lastName:{
-    //   type: DataTypes.STRING,
-    //   allowNull: false,
-    // },
-    name: {
+
+    firstName: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    lastName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    // name: {
+
+    // firstName: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // lastName: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+    // name: {
+    //   type: DataTypes.STRING,
+    //   allowNull: false,
+    // },
+
     email: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -47,14 +59,14 @@ User.init(
       },
     },
     //user information: address, phone number
-    address: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    contact_info: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
+    // address: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true,
+    // },
+    // contact_info: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true,
+    // },
   },
   {
     hooks: {

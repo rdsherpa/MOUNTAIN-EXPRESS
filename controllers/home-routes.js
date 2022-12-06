@@ -90,9 +90,9 @@ router.get("/trip/:id", (req, res) => {
     });
 });
 
-router.get('/one-way', (req, res) => {
-  res.render('one-way')
-})
+router.get("/one-way", (req, res) => {
+  res.render("one-way");
+});
 
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -104,13 +104,16 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/booking", (req,res)=>{
-  res.render("booking")
-})
+router.get("/booking", (req, res) => {
+  res.render("booking");
+});
 
-router.get("/payment", (req,res)=>{
-  res.render("payment")
-})
+router.get("/payment", (req, res) => {
+  res.render("payment");
+});
+
+router.get("/contact", (req, res) => {
+  res.render("contact");
+});
 
 module.exports = router;
-

@@ -16,14 +16,13 @@ Challanges we faced along the way was connecting to the server and since we used
 
 As a business owner I want a web application that will help customers to easily book ride trips to Colorado. They are able to choose a date, time, book in advance and see the price.
 
-## Acceptance Criteria
+## Screen Shot of the webpage:
 
-2. Then you will be taken to our website Mountain Express, where you are shown about the mission of the company and it's service.
-3. You can also get an option to login where you can sign up. For this you need to enter your information and once you are done with it you can sign up with your email and password.
-4. This will take you to the booking site where you are required to enter you First and Last Name, No. of Passangers, enter one-way or a round trip.
-5. If you choose a round trip you will be given option to choose return date as well.
-6. After that you can choose your destination which will then lead you the payment page.
-7. Once you input your payment method you will get conformaton that your trip is booked.
+![alt text](/public/images/Screen%20Shot%202022-12-06%20at%202.33.06%20PM.png)
+![alt text](/public/images/Screen%20Shot%202022-12-06%20at%202.33.27%20PM.png)
+![alt text](/public/images/Screen%20Shot%202022-12-06%20at%202.33.42%20PM.png)
+![alt text](/public/images/Screen%20Shot%202022-12-06%20at%202.34.00%20PM.png)
+![alt text](/public/images/Screen%20Shot%202022-12-06%20at%202.34.29%20PM.png)
 
 ## Installation:
 
@@ -52,6 +51,7 @@ You can follow the steps to run the program:
 5. If you choose a round trip you will be given option to choose return date as well.
 6. After that you can choose your destination which will then lead you the payment page.
 7. Once you input your payment method you will get conformaton that your trip is booked.
+8. Our application can be viewed in any sizes and devices like iphone, table and window.
 
 ## Technology Used:
 
@@ -60,4 +60,4 @@ Node.js, Inquirer, JavaScript, MySQL, CSS, Html.
 ## Questions:
 
 If you would like to check our work you can visit at Github rsherpa, https://github.com/rdsherpa/MOUNTAIN-EXPRESS/tree/Riwa
-You can also eamil me at sherpariwa@gmail.com.
+You can also eamil us at sherpariwa@gmail.com, anne.spurlock16@gmail.com, and wjulianbeets@gmail.com
