@@ -16,15 +16,6 @@ Challanges we faced along the way was connecting to the server and since we used
 
 As a business owner I want a web application that will help customers to easily book ride trips to Colorado. They are able to choose a date, time, book in advance and see the price.
 
-## Acceptance Criteria
-
-2. Then you will be taken to our website Mountain Express, where you are shown about the mission of the company and it's service.
-3. You can also get an option to login where you can sign up. For this you need to enter your information and once you are done with it you can sign up with your email and password.
-4. This will take you to the booking site where you are required to enter you First and Last Name, No. of Passangers, enter one-way or a round trip.
-5. If you choose a round trip you will be given option to choose return date as well.
-6. After that you can choose your destination which will then lead you the payment page.
-7. Once you input your payment method you will get conformaton that your trip is booked.
-
 ## Installation:
 
 Inorder to install this application, you need to clone the code into your terminal for the respective repository. You can then install package.json by entering npm init -y, once you are done with that make sure you have the following pakage installed:
