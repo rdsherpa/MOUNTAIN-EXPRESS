@@ -81,7 +81,7 @@ app.post("/send", async (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: "test@mountainexpress.com", // generated ethereal user
-      pass: "password123", // generated ethereal password
+      password: "password123", // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false, //adding a parameter
