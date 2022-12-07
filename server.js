@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 // need to set up cookeies, secret
 
 const sess = {
-  secret: "Super secret secret",
+  secret: process.env.SESSION_SECRET,
   cookie: {
     maxAge: 300000,
     httpOnly: true,
